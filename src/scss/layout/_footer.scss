@@ -1,2 +1,55 @@
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 16.5vh;
+    background-color: $color-headerFooter;
+
+    &__menu {
+        display: flex;
+
+        &-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $color-menu;
+            width: 80vw;
+            height: 5.8vh;
+
+            &--item {
+                &_link {
+                    text-decoration: none;
+                    color: $color-link;
+                    font-family: $font;
+                    font-size: 3.4vw;
+                }
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+
+        &-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $color-socialMedia;
+            width: 33vw;
+            height: 5.8vh;
+
+            &--item {
+                &_link {
+                    text-decoration: none;
+                    color: $color-link;
+                    font-family: $font;
+                    font-size: 3.4vw;
+                }
+            }
+        }
+    }
 }
