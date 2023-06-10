@@ -1,15 +1,18 @@
-// Esta es la variable que usaremos como tamaño por defecto
-$defaultFontSize: 16;
+// Font-size
+//$defaultFontSize: 16;
 
-// Estos son los tamaños para las media-queries
+// Media-queries
 
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
 
-// fonts
-// $font-main: 'Roboto', sans-serif;
+// Font
+$font: 'Montserrat', sans-serif;
+$bold: 700;
+$regular: 400;
 
-// colors
-// $color-text: #000;
-// $color-title: #000;
-// $color-background: #999;
+// Colors
+$color-headerFooter:#fb9c3c;
+$color-menu: #b83c25;
+$color-link: white;
+$color-socialMedia:  #ae600d;

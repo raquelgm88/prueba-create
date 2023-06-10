@@ -1,2 +1,49 @@
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 18vh;
+    background-color: $color-headerFooter;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 13vh;
+
+        &-logo {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        &-title {
+            font-family: $font;
+            font-size: 6vw;
+        }
+    }
+
+    &__menu {
+       display: flex;
+       
+        &-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $color-menu;
+            width: 100vw;
+            height: 5.8vh;
+
+            &--item {
+                &_link {
+                    text-decoration: none;
+                    color: $color-link;
+                    font-family: $font;
+                    font-size: 3.4vw;
+                }
+            }
+        }
+    }
 }
