@@ -1,8 +1,59 @@
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100vw;
     height: 65.5vh;
 
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        height: 100vh;
+        padding-top: 1vh;
+
+        &-article {
+            display: flex;
+            flex-direction: column;
+            font-family: $font;
+    
+            &--title {
+                width: 90vw;
+                font-weight: $bold;
+                font-size: 4.7vw;
+                margin: 2vh auto 2vh auto;
+            }
+
+            &--text {
+                font-size: 3.4vw;
+                line-height: 14px;
+            }
+
+            &--text2 {
+                align-self: center;
+                border-left: solid 1vw $color-border;
+                font-size: 3.4vw;
+                line-height: 14px;
+                width: 70vw;
+                padding-left: 15px;
+            }
+        }
+
+        &-line {
+            width: 90vw;
+            height: 1px;
+            background-color: $color-line;
+        }
+
+        &__aside {
+           display: none;
+
+           &-rectangle {
+            display: none;
+           }
+        }
+    }
 }
