@@ -8,8 +8,8 @@
 
     @media all and (min-width: $breakpoint-desktop) {
        flex-direction: row;
-       align-items: center;
        justify-content: space-around;
+       align-items: center;
        height: 11vh;
     }
 
@@ -19,10 +19,6 @@
         justify-content: center;
         align-items: center;
         height: 13vh;
-
-        @media all and (min-width: $breakpoint-desktop) {
-            //height: 10vh;
-        }
 
         &-logo {
             width: 11vw;
@@ -45,15 +41,15 @@
 
     &__menu {
         display: flex;
-       
+
         &-list {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            background-color: $color-menu;
             width: 100vw;
             height: 5.8vh;
+            background-color: $color-menu;
 
             @media all and (min-width: $breakpoint-desktop) {
                 width: 42vw;
@@ -61,6 +57,41 @@
             }
 
             &--item {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 25%;
+                height: 5.8vh;
+                
+                @keyframes wiggle {
+                    0%, 7% {
+                      transform: rotateZ(0);
+                    }
+                    15% {
+                      transform: rotateZ(-15deg);
+                    }
+                    20% {
+                      transform: rotateZ(10deg);
+                    }
+                    25% {
+                      transform: rotateZ(-10deg);
+                    }
+                    30% {
+                      transform: rotateZ(6deg);
+                    }
+                    35% {
+                      transform: rotateZ(-4deg);
+                    }
+                    40%, 100% {
+                      transform: rotateZ(0);
+                    }
+                  }
+
+                @media all and (min-width: $breakpoint-desktop) {
+                    height: 5.3vh;
+                }
+
                 &_link {
                     text-decoration: none;
                     color: $color-link;
@@ -71,6 +102,12 @@
                         font-size: 1.4vw;
                     }
                 }
+            }
+
+            &--item:hover {
+                background-color: $color-hover;
+                transform: scale(1.1);
+                animation: wiggle 2s linear infinite;
             }
         }
     }

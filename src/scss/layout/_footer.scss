@@ -1,19 +1,19 @@
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 16.5vh;
     background-color: $color-headerFooter;
 
     @media all and (min-width: $breakpoint-desktop) {
         flex-direction: row;
-        align-items: center;
         justify-content: space-around;
+        align-items: center;
         gap: 34vw;
         height: 10vh;
-     }
+    }
 
     &__menu {
         display: flex;
@@ -23,9 +23,9 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            background-color: $color-menu;
             width: 80vw;
             height: 5.8vh;
+            background-color: $color-menu;
 
             @media all and (min-width: $breakpoint-desktop) {
                 width: 21.2vw;
@@ -33,6 +33,17 @@
             }
 
             &--item {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 25%;
+                height: 5.8vh;
+
+                @media all and (min-width: $breakpoint-desktop) {
+                    height: 5.3vh;
+                }
+
                 &_link {
                     text-decoration: none;
                     color: $color-link;
@@ -43,6 +54,11 @@
                         font-size: 1.4vw;
                     }
                 }
+            }
+
+            &--item:hover {
+                background-color: $color-hover;
+                transform: scale(1.1);
             }
         }
     }
@@ -55,9 +71,9 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            background-color: $color-socialMedia;
             width: 33vw;
             height: 5.8vh;
+            background-color: $color-socialMedia;
 
             @media all and (min-width: $breakpoint-desktop) {
                 width: 13.2vw;

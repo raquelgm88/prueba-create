@@ -9,6 +9,7 @@
     @media all and (min-width: $breakpoint-desktop) {
         flex-direction: row;
         justify-content: flex-start;
+        width: 93.8vw;
         height: 79vh;
         border-left: solid 6.2vw $color-mainBorder;
     }
@@ -24,10 +25,8 @@
         @media all and (min-width: $breakpoint-desktop) {
             justify-content: flex-start;
             align-items: center;
-            //border-left: solid 6.2vw $color-mainBorder;
-            height: 79vh;
             width: 61.3vw;
-            background-color: aqua;
+            height: 79vh;
         }
 
         &-article {
@@ -37,74 +36,89 @@
     
             &--title {
                 width: 90vw;
+                margin-bottom: 1.5vh;
                 font-weight: $bold;
                 font-size: 4.7vw;
-                margin-bottom: 1.5vh;
 
                 @media all and (min-width: $breakpoint-desktop) {
-                   font-size: 2vw;
-                   width: 60vw;
-                   margin: 1.8vh auto 1.3vh 1.6vw;
+                    width: 58vw;
+                    margin: 2.8vh auto 1.3vh auto;
+                    font-size: 2vw;
                 }
             }
 
             &--text {
                 width: 90vw;
                 font-size: 3.4vw;
-                line-height: 17px;
 
                 @media all and (min-width: $breakpoint-desktop) {
+                    width: 58vw;
+                    margin-bottom: 1.8vh;
                     font-size: 1.3vw;
-                    width: 60vw;
-                    margin: auto auto 1.8vh 1.6vw;
                 }
             }
 
             &--text2 {
                 align-self: center;
-                border-left: solid 3px $color-border;
-                font-size: 3.4vw;
-                line-height: 17px;
                 width: 70vw;
                 padding-left: 15px;
+                border-left: solid 3px $color-border;
+                font-size: 3.4vw;
 
                 @media all and (min-width: $breakpoint-desktop) {
+                    width: 53.2vw;
+                    margin: auto auto 1.8vh 20px;
+                    padding-left: 18px;
+                    border-left: solid 4px $color-border;
                     font-size: 1.3vw;
-                    width: 55vw;
-                    margin: auto auto 1.8vh 33px;
                 }
             }
         }
 
         &-line {
+            align-self: center;
             width: 90vw;
             height: 1px;
             background-color: $color-line;
-            align-self: center;
 
             @media all and (min-width: $breakpoint-desktop) {
-                width: 60vw;
+                width: 58vw;
             }
         }
+    }
 
-        &__aside {
-           display: none;
+    &__aside {
+        display: none;
 
-           @media all and (min-width: $breakpoint-desktop) {
-                display: flex;
-                flex-direction: column;
-                background-color: $color-aside;
-                width: 20vw;
-                height: 65.5vh;
-           }
+        @media all and (min-width: $breakpoint-desktop) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 26.5vw;
+            height: 79vh;
+            background-color: $color-aside;
+        }
 
-           &-rectangle {
+        &-rectangle {
             display: none;
 
             @media all and (min-width: $breakpoint-desktop) {
-                
+                display: flex;
+                margin-top: 3.3vh;
+                width: 21.2vw;
+                height: 17vh;
+                background-color: $color-headerFooter;
             }
-           }
+        }
+
+        &-rectangle2 {
+            display: none;
+
+            @media all and (min-width: $breakpoint-desktop) {
+                display: flex;
+                margin-top: 1.7vh;
+            }
         }
     }
 }
