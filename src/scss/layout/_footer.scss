@@ -7,6 +7,14 @@
     height: 16.5vh;
     background-color: $color-headerFooter;
 
+    @media all and (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 34vw;
+        height: 10vh;
+     }
+
     &__menu {
         display: flex;
 
@@ -19,12 +27,21 @@
             width: 80vw;
             height: 5.8vh;
 
+            @media all and (min-width: $breakpoint-desktop) {
+                width: 21.2vw;
+                height: 5.3vh;
+            }
+
             &--item {
                 &_link {
                     text-decoration: none;
                     color: $color-link;
                     font-family: $font;
                     font-size: 3.4vw;
+
+                    @media all and (min-width: $breakpoint-desktop) {
+                        font-size: 1.4vw;
+                    }
                 }
             }
         }
@@ -42,12 +59,21 @@
             width: 33vw;
             height: 5.8vh;
 
+            @media all and (min-width: $breakpoint-desktop) {
+                width: 13.2vw;
+                height: 5.3vh;
+            }
+
             &--item {
                 &_link {
                     text-decoration: none;
                     color: $color-link;
                     font-family: $font;
                     font-size: 3.4vw;
+
+                    @media all and (min-width: $breakpoint-desktop) {
+                        font-size: 1.5vw;
+                    }
                 }
             }
         }
