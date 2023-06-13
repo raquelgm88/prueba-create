@@ -1,13 +1,13 @@
 # Prueba de maquetación - Create
 
-Prueba técnica de maquetación. Desarrollado con HTML5 y CSS3 (SASS).
+Prueba técnica de maquetación. Desarrollado con una plantilla de proyectos que incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local.
 
 ## Características
 
 - Ha sido maquetado siguiendo el concepto de diseño web **Mobile First**.
 - Se incluyen tres modelos de maquetación: **mobile**, **tablet** y **desktop**.
 - Todas las medidas son relativas, lo que hace que se adapten las proporciones de cada elemento a las dimensiones del dispositivo desde donde se visualice.
-- Como puntos extra, he añadido en los estados hover de los **Links** una animación y transformaciones.
+- Como elementos extra, he añadido en los estados hover de los **Links** una animación y transformaciones.
 
 ## Herramientas utilizadas
 
@@ -23,16 +23,12 @@ Prueba técnica de maquetación. Desarrollado con HTML5 y CSS3 (SASS).
 
 > **NOTA:** Es necesario tener instalado [Node JS](https://nodejs.org/) para trabajar con este repositorio.
 
-1. Instala las dependencias locales ejecutando en la terminal el comando:
+1. Clona el repositorio en el equipo.
+
+2. Instala las dependencias locales ejecutando en la terminal el comando:
 
 ```bash
 npm install
-```
-
-2. Instala el paquete para SASS:
-
-```bash
-npm install node-sass
 ```
 
 3. Arranca el proyecto ejecutando a continuación en la terminal:
