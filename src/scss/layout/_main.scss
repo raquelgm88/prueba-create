@@ -6,9 +6,16 @@
     width: 100vw;
     height: 65.5vh;
 
-    @media all and (min-width: $breakpoint-desktop) {
+    @media all and (min-width: $breakpoint-tablet) {
+        display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        align-items: center;
+        width: 100vw;
+        height: 65.5vh;
+    }
+
+    @media all and (min-width: $breakpoint-desktop) {
         width: 93.8vw;
         height: 79vh;
         border-left: solid 6.2vw $color-mainBorder;
@@ -21,6 +28,11 @@
         align-items: flex-start;
         width: 90vw;
         height: 65.5vh;
+
+        @media all and (min-width: $breakpoint-tablet) {
+            width: 64vw;
+            padding: 0 3vw 0 3vw;
+        }
 
         @media all and (min-width: $breakpoint-desktop) {
             justify-content: flex-start;
@@ -40,6 +52,11 @@
                 font-weight: $bold;
                 font-size: 4.7vw;
 
+                @media all and (min-width: $breakpoint-tablet) {
+                    width: 64vw;
+                    font-size: 4.1vw;
+                }
+
                 @media all and (min-width: $breakpoint-desktop) {
                     width: 58vw;
                     margin: 2.8vh auto 1.3vh auto;
@@ -50,6 +67,11 @@
             &--text {
                 width: 90vw;
                 font-size: 3.4vw;
+
+                @media all and (min-width: $breakpoint-tablet) {
+                    width: 64vw;
+                    font-size: 3vw;
+                }
 
                 @media all and (min-width: $breakpoint-desktop) {
                     width: 58vw;
@@ -64,6 +86,12 @@
                 padding-left: 15px;
                 border-left: solid 3px $color-border;
                 font-size: 3.4vw;
+
+                @media all and (min-width: $breakpoint-tablet) {
+                    width: 63.5vw;
+                    margin-left: 10px;
+                    font-size: 3vw;
+                }
 
                 @media all and (min-width: $breakpoint-desktop) {
                     width: 53.2vw;
@@ -81,6 +109,10 @@
             height: 1px;
             background-color: $color-line;
 
+            @media all and (min-width: $breakpoint-tablet) {
+                width: 64vw;
+            }
+
             @media all and (min-width: $breakpoint-desktop) {
                 width: 58vw;
             }
@@ -90,33 +122,47 @@
     &__aside {
         display: none;
 
-        @media all and (min-width: $breakpoint-desktop) {
+        @media all and (min-width: $breakpoint-tablet) {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+            width: 30vw;
+            height: 65.5vh;
+            background-color: $color-aside;
+        }
+
+        @media all and (min-width: $breakpoint-desktop) {
             width: 26.5vw;
             height: 79vh;
-            background-color: $color-aside;
         }
 
         &-rectangle {
             display: none;
 
-            @media all and (min-width: $breakpoint-desktop) {
+            @media all and (min-width: $breakpoint-tablet) {
                 display: flex;
+                margin-top: 2vh;
+                width: 23.5vw;
+                height: 20vh;
+                background-color: $color-headerFooter;
+            }
+
+            @media all and (min-width: $breakpoint-desktop) {
                 margin-top: 3.3vh;
                 width: 21.2vw;
                 height: 17vh;
-                background-color: $color-headerFooter;
             }
         }
 
         &-rectangle2 {
             display: none;
 
-            @media all and (min-width: $breakpoint-desktop) {
+            @media all and (min-width: $breakpoint-tablet) {
                 display: flex;
+            }
+
+            @media all and (min-width: $breakpoint-desktop) {
                 margin-top: 1.7vh;
             }
         }

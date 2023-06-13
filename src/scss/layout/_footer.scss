@@ -81,6 +81,17 @@
             }
 
             &--item {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 33.3%;
+                height: 5.8vh;
+
+                @media all and (min-width: $breakpoint-desktop) {
+                    height: 5.3vh;
+                }
+
                 &_link {
                     text-decoration: none;
                     color: $color-link;
@@ -91,6 +102,10 @@
                         font-size: 1.5vw;
                     }
                 }
+            }
+
+            &--item:hover {
+                transform: scale(0.8);
             }
         }
     }
